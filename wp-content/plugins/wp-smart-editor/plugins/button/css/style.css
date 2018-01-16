@@ -1,0 +1,203 @@
+body {
+    font-family: Helvetica, arial, sans-serif;
+    font-size: 14px;
+}
+.no-js #loader {
+    display: none;
+}
+.js #loader {
+    display: block;
+    position: absolute;
+    left: 100px;
+    top: 0;
+}
+.preload-img {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url(Preloader_11.gif) center no-repeat #fff;
+}
+
+input {
+    background-color: transparent !important;
+    border: none !important;
+    border-bottom: 1px solid #9e9e9e !important;
+    border-radius: 0;
+    outline: none;
+    font-size: 14px;
+    margin: 0 0 5px 0;
+    padding: 5px;
+    box-shadow: none !important;
+    transition: all .3s;
+}
+.ui-accordion-header {
+    background: #2196F3;
+    color: #fff;
+    margin: 5px 0;
+    padding: 5px;
+    font-size: 14px;
+}
+.ui-accordion-header:hover {
+    background: #0276c4;
+    cursor: pointer;
+}
+.ui-accordion-header:after {
+    font-family: dashicons;
+    content: "\f345";
+    float: right;
+}
+.ui-accordion-header[aria-expanded='true']:after {
+    content: "\f347";
+}
+.ui-accordion-content {
+    padding: 0 15px;
+}
+.mini-input {
+    width: 42px;
+}
+.input {
+    width: 240px;
+}
+.control-label, .controls {
+    display: inline-block;
+}
+.control-label {
+    min-width: 130px;
+}
+.control-group {
+    padding: 5px;
+}
+.minicolors-input {
+    height: auto !important;
+    font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+    min-width: 100px;
+}
+#button_label {
+    min-width: 100px;
+}
+.btn {
+    border: none;
+    padding: 6px;
+    min-width: 25px;
+    text-transform: uppercase;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+}
+.btn:active {
+    background: #5ab4fb;
+}
+.incr, .decr {
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+
+.col-sm-7 label {
+    font-weight: bold;
+}
+#preview-block {
+    padding: 10px 0;
+}
+#preview-block label {
+    padding: 10px 0;
+    display: block;
+}
+#preview {
+    border: 1px solid #ccc;
+    padding: 30px;
+    text-align: center;
+}
+.wpsebtn {
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    outline: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.wpsebtn:hover {
+    text-decoration: none;
+}
+#btn_add {
+    color: white;
+    background: #27AE60;
+    font-size: 14px;
+    padding: 5px 10px;
+    font-weight: bold;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)
+}
+#btn_add:hover {
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+}
+#btn_save {
+    color: white;
+    background: #3498DB;
+    font-size: 14px;
+    padding: 5px 10px;
+    font-weight: bold;
+    margin-left: 10px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)
+}
+#btn_save:hover {
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+}
+.saved-btns {
+    margin-top: 30px;
+}
+#saved-btns-block {
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    padding: 5px;
+}
+.saved-btns-list {
+    list-style: none;
+    padding: 10px;
+    margin:  0;
+}
+.btns-item {
+    float: left;
+    padding: 10px;
+}
+.btns-item a {
+    display: inline-block;
+}
+.btns-item .insert {
+    float: left;
+    cursor: pointer;
+}
+.btns-item .edit, .btns-item .trash {
+    float: right;
+    padding-left: 2px;
+    cursor: pointer;
+}
+.btns-item .insert, .btns-item .edit, .btns-item .trash {
+    color: #666666;
+}
+.btns-item .insert:hover, .btns-item .edit:hover, .btns-item .trash:hover {
+    color: #43a1f2;
+}
+.btns-item a i {
+    font-size: 16px;
+    width: auto;
+    height: auto;
+}
+
+#wpfooter {
+    display: none;
+}

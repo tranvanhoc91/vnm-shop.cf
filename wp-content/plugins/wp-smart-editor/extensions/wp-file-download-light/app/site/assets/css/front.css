@@ -1,0 +1,246 @@
+@font-face {
+    font-family: 'robotobold';
+    src: url('../css/fonts/roboto-bold.eot');
+    src: url('../css/fonts/roboto-bold.eot?#iefix') format('embedded-opentype'), url('../css/fonts/roboto-bold.woff2') format('woff2'), url('../css/fonts/roboto-bold.woff') format('woff'), url('../css/fonts/roboto-bold.ttf') format('truetype'), url('../css/fonts/roboto-bold.svg#robotobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotomedium';
+    src: url('../css/fonts/Roboto-Medium.eot');
+    src: url('../css/fonts/Roboto-Medium.eot?#iefix') format('embedded-opentype'), url('../css/fonts/Roboto-Medium.woff') format('woff'), url('../css/fonts/Roboto-Medium.ttf') format('truetype'), url('../css/fonts/Roboto-Medium.svg#robotomedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('../css/fonts/Roboto-Regular.eot');
+    src: url('../css/fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'), url('../css/fonts/Roboto-Regular.woff') format('woff'), url('../css/fonts/Roboto-Regular.ttf') format('truetype'), url('../css/fonts/Roboto-Regular.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.wpfd-loading {
+    width: 65px;
+    height: 65px;
+    margin: 30px auto;
+}
+
+#wpfd-loading-wrap,
+#wpfd-loading-tree-wrap {
+    position: absolute;
+    left: -99999px;
+}
+
+.wpfd-loading-tree-bg {
+    background: url(../images/theme/spinner.gif) left 0px no-repeat !important;
+    background-size: 18px !important;
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin: 0px 0px 0px -20px;
+}
+
+.wpfd-content {
+    font-family: 'robotomedium';
+    font-weight: normal;
+    overflow: hidden;
+    box-sizing: border-box;
+    background: #eeeeee;
+}
+
+.wpfd-content a:focus {
+    outline: none;
+}
+
+
+/* pagination */
+
+.wpfd-pagination .page-numbers {
+    margin: 6px;
+}
+
+.wpfd-pagination a.page-numbers {
+    cursor: pointer;
+}
+
+
+/* breadcrumbs */
+
+.wpfd-content .breadcrumbs {
+    padding: 8px 15px !important;
+    margin: 0px 0px 0px 0px;
+    list-style: outside none none;
+    background: #fafafa;
+    font-family: "robotomedium";
+    font-size: 24px;
+    color: #888;
+}
+
+.wpfd-content .breadcrumbs > li {
+    display: inline-block;
+    font-size: 16px;
+}
+
+.wpfd-content .breadcrumbs a {
+    color: #888
+}
+
+.wpfd-content .breadcrumbs a:hover {}
+
+.wpfd-content .breadcrumbs > li > .divider {
+    padding: 0px 5px;
+}
+
+.wpfd-container {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
+/* left folder tree */
+
+.wpfd-foldertree {
+    float: left;
+    padding: 0px 10px 0px 0px;
+    margin: 0;
+    min-height: 250px;
+    overflow-x: hidden;
+    border-right: 1px solid #dddddd;
+}
+
+
+/* main area */
+
+.wpfd-content .wpfdcategory {
+    font-family: "robotobold";
+    font-size: 14px;
+    line-height: 1.5;
+    color: #8f8f8f;
+    box-sizing: border-box;
+    width: 175px;
+    height: 37px;
+    padding: 10px;
+    margin: 0px 10px 0px 0px;
+    text-decoration: none;
+    border: none;
+    background: #fff;
+    display: inline-block;
+    /* IE is so silly */
+    max-width: 175px;
+}
+
+.wpfd-content .wpfdcategory > span {
+    display: inline-block;
+    width: 130px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: -3px;
+}
+
+.wpfd-content .wpfdcategory:hover {
+    -webkit-box-shadow: 0px 1px 3px #888888;
+    -moz-box-shadow: 0px 1px 3px #888888;
+    box-shadow: 0px 1px 3px #888888;
+}
+
+.wpfd-content .wpfdcategory .wpfd-folder {
+    font-size: 18px;
+    float: right;
+    vertical-align: middle;
+    font-family: Material-Design-Iconic-Font;
+}
+
+.wpfd-content .downloadlink {
+    background-color: #76bc58;
+    border-color: #76bc58;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 13px;
+    text-align: center;
+    text-decoration: none;
+    box-sizing: border-box;
+    padding: 5px 15px;
+    display: block;
+    width: 140px;
+    height: 32px;
+    margin-bottom: 5px;
+    line-height: 22px;
+}
+
+.wpfd-content i.wpfd-download {
+    font-size: 16px;
+    vertical-align: middle;
+    text-align: right;
+    margin-left: 10px;
+    margin-bottom: 3px;
+}
+
+.wpfd-content .openlink {
+    background-color: #fafafa;
+    border-color: #dadada;
+    border-radius: 15px;
+    color: #8f8f8f;
+    font-size: 13px;
+    margin-top: 5px;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    box-sizing: border-box;
+    display: block;
+    width: 120px;
+    height: 32px;
+    line-height: 22px;
+}
+
+.wpfd-content i.wpfd-preview {
+    font-size: 16px;
+    vertical-align: middle;
+    text-align: right;
+    margin-left: 10px;
+    margin-bottom: 3px;
+}
+
+
+/* other */
+
+.wpfd-content .backcategory {
+    float: right;
+    width: auto;
+    height: auto;
+    background: none;
+    padding: 0;
+    margin: 10px 0px 0px 0px;
+    font-weight: normal;
+    box-shadow: none;
+}
+
+.wpfd-content .backcategory:hover {
+    box-shadow: none;
+}
+
+.wpfd-content .backcategory .zmdi-chevron-left {
+    vertical-align: middle;
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+
+/* Human theme fix */
+
+.entry h1 span,
+.entry h2 span,
+.entry h3 span,
+.entry h4 span,
+.entry h5 span,
+.entry h6 span {
+    color: inherit;
+}

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form class="wpfdparams" method="POST" action="admin.php?page=wpfd-config&amp;theme=default&amp;task=config.savethemeparams">
+    <input 
+        name="marginleft"
+        type="typeint"
+        label="Margin left"
+        value="10"
+        class="inputbox input-block-level"
+        required="true"
+    />
+    <input 
+        name="marginright"
+        type="typeint"
+        label="Margin right"
+        value="10"
+        class="inputbox input-block-level"
+        required="true"
+    />
+    <input 
+        name="margintop"
+        type="typeint"
+        label="Margin top"
+        value="10"
+        class="inputbox input-block-level"
+        required="true"
+    />
+    <input 
+        name="marginbottom"
+        type="typeint"
+        label="Margin bottom"
+        value="10"
+        class="inputbox input-block-level"
+        required="true"
+    />
+    
+    <input
+        name="showsize"
+        type="select"
+        label="Show weight"
+        value="1"
+        class="inline">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+    </input>
+    
+    <input
+        name="showtitle"
+        type="select"
+        label="Show title"
+        value="1"
+        class="inline">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+    </input>
+    <input
+            name="croptitle"
+            type="text2"
+            label="Crop titles"
+            value="0"
+            class="inputbox input-block-level"
+            required="true"
+            tooltip="Crop the files titles after a predefined number of characters"
+            namespace="Joomunited\WP_File_Download\Admin\Fields\"
+    />
+    <input
+        name="showversion"
+        type="select"
+        label="Show version"
+        value="1"
+        class="inline">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+    </input>
+    
+    <input
+        name="showhits"
+        type="select"
+        label="Show hits"
+        value="1"
+        class="inline">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+    </input>
+    
+    <input
+        name="showdownload"
+        type="select"
+        label="Show download link"
+        value="1"
+        class="inline">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+    </input>
+    <input
+            name="bgdownloadlink"
+            type="text"
+            label="Background download link"
+            value="#76bc58"
+            class="inputbox input-block-level wp-color-field"
+            />
+    <input
+            name="colordownloadlink"
+            type="text"
+            label="Color download link"
+            value="#ffffff"
+            class="inputbox input-block-level wp-color-field"
+            />
+
+    <input
+        name="showdateadd"
+        type="select"
+        label="Show date added"
+        value="1"
+        class="inline">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+    </input>
+    
+    <input
+        name="showdatemodified"
+        type="select"
+        label="Show date modified"
+        value="0"
+        class="inline">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+    </input>
+    
+    <input
+        name="showsubcategories"
+        type="select"
+        label="Show subcategories"
+        value="1"
+        class="inline">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+    </input>
+    
+    <input
+        name="showbreadcrumb"
+        type="select"
+        label="Show Breadcrumb"
+        value="1"
+        class="inline">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+    </input>
+    
+    <input
+        name="showfoldertree"
+        type="select"
+        label="Show folder tree"
+        value="0"
+        class="inline">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+    </input>
+    
+    <button
+        type="submit"
+        value="Save"
+        class="button button-primary"
+    />
+
+</form>

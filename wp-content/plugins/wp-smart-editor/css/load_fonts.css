@@ -1,0 +1,166 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('fonts/icomoon.eot');
+    src:  url('fonts/icomoon.eot#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf') format('truetype'),
+    url('fonts/icomoon.woff') format('woff'),
+    url('fonts/icomoon.svg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="wpseicon-"], [class*=" wpseicon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    box-sizing: border-box;
+    speak: none;
+    font-size: 18px;
+    padding: 0 2px;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.wpseicon-plus:before {
+    content: "\e901";
+}
+.wpseicon-edit:before {
+    content: "\e900";
+}
+.wpseicon-copy:before {
+    content: "\e92c";
+}
+.wpseicon-quill:before {
+    content: "\e907";
+}
+.wpseicon-printer:before {
+    content: "\e954";
+}
+.wpseicon-database:before {
+    content: "\e964";
+}
+.wpseicon-binoculars:before {
+    content: "\e985";
+}
+.wpseicon-trash:before {
+    content: "\e9ac";
+}
+.wpseicon-flag:before {
+    content: "\e9cc";
+}
+.wpseicon-superscript:before {
+    content: "\ea69";
+}
+.wpseicon-subscript:before {
+    content: "\ea6a";
+}
+.wpseicon-pilcrow:before {
+    content: "\ea73";
+}
+.wpseicon-ltr:before {
+    content: "\ea74";
+}
+.wpseicon-rtl:before {
+    content: "\ea75";
+}
+
+.menu-icon-wpse_profiles .wp-submenu li:nth-child(3){
+    display: none;
+}
+.mce-i-myicon {
+    font-family: 'dashicons' !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 20px !important;
+}
+#wp-content-editor-container .mce-mytext {
+    border: 1px solid #ffffff;
+}
+#wp-content-editor-container .mce-mytext:hover {
+    border: 1px solid #555d66;
+}
+.mce-mytext span {
+    line-height: 20px !important;
+}
+#wp-content-editor-container .mce-menubtn.mce-btn-has-text:not(.mce-listbox) {
+    background: #fff;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+}
+#wp-content-editor-container .mce-menubtn.mce-btn-has-text:not(.mce-listbox) button {
+    line-height: 24px;
+    padding: 0 3px;
+}
+#wp-content-editor-container .mce-menubtn.mce-btn-has-text:not(.mce-listbox):hover {
+    border: 1px solid #b4b9be;
+}
+.wpsetips_qtip {
+    background: #000000 !important;
+    color: #ffffff !important;
+    border: 1px solid #000000 !important;
+}
+
+.mce-pull-left {
+    left: 10px !important;
+}
+
+/*Style for tooltip quick edit*/
+.wpsetooltip-qe-block div {
+    display: inline-block;
+}
+
+.mce-container.wpsetooltip-qe-block p {
+    margin: 0;
+}
+
+.wpsetooltip-qe-block .wpsetooltip-qe-preview p {
+    max-width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 19px;
+}
+
+.wpsetooltip-qe-block .wpsetooltip-qe-preview input {
+    width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 3px 5px;
+}
+
+.wpsetooltip-qe-block .wpsetooltip-qe-container .wpsetooltip-qe-preview, .wpsetooltip-qe-block .wpsetooltip-qe-btn div {
+    padding: 3px;
+    margin-left: 3px;
+    border: 1px solid transparent;
+}
+
+.wpsetooltip-qe-block .wpsetooltip-qe-btn div {
+    cursor: pointer;
+    color: #555d66;
+}
+
+.wpsetooltip-qe-block .wpsetooltip-qe-btn button {
+    line-height: 19px;
+}
+
+.wpsetooltip-qe-block .wpsetooltip-qe-btn div:hover {
+    border-color: #555d66;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+}
+
+.wpsetooltip-qe-block .wpsetooltip-qe-btn .wpsetooltip-qe-apply {
+    background: #2d8ac7;
+    padding: 3px 5px;
+    margin-top: 4px;
+}
+.wpsetooltip-qe-block .wpsetooltip-qe-apply i {
+    color: #fff;
+}

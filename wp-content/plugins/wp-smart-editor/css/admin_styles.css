@@ -1,0 +1,544 @@
+/*
+* Admin styles
+*/
+.no-display {
+    display: none !important;
+}
+
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=url],
+input[type=time],
+input[type=date],
+input[type=datetime-local],
+input[type=tel],
+input[type=number],
+input[type=search],
+textarea.materialize-textarea {
+    background-color: transparent !important;
+    border: none !important;
+    border-bottom: 1px solid #9e9e9e !important;
+    border-radius: 0;
+    outline: none;
+    font-size: 1rem;
+    margin: 0 0 15px 0;
+    padding: 0;
+    box-shadow: none !important;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    transition: all .3s;
+}
+#postbox-container-1 {
+    display: none !important;
+}
+
+/*Style for tabs*/
+.tabs {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 48px;
+    background-color: #fff;
+    margin: 0 auto;
+    width: 100%;
+    white-space: nowrap;
+}
+
+.tabs .tab {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    display: block;
+    float: left;
+    text-align: center;
+    line-height: 48px;
+    height: 48px;
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    letter-spacing: .8px;
+    width: 35%;
+    min-width: 80px;
+}
+
+.tabs .tab a {
+    text-decoration: none;
+    color: #00bcd4;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-transition: color 0.28s ease;
+    -moz-transition: color 0.28s ease;
+    -o-transition: color 0.28s ease;
+    -ms-transition: color 0.28s ease;
+    transition: color 0.28s ease;
+}
+
+.tabs .tab a:hover {
+    color: #3be9ff;
+}
+
+.tabs .tab.disabled a {
+    color: #3be9ff;
+    cursor: default;
+}
+
+.tabs .indicator {
+    position: absolute;
+    bottom: 0;
+    height: 3px;
+    background-color: #D54E21;
+    will-change: left, right;
+}
+
+.cyan {
+    background-color: #2196F3 !important;
+}
+
+.cyan.lighten-4 {
+    background-color: #ffffff !important;
+}
+
+.z-depth-1,
+nav,
+.card-panel,
+.card,
+.toast,
+.btn,
+.btn-large,
+.btn-floating,
+.dropdown-content,
+.collapsible,
+.side-nav {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.white-text {
+    color: #FFFFFF !important;
+}
+
+.waves-effect {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    vertical-align: middle;
+    z-index: 1;
+    will-change: opacity, transform;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.waves-effect .waves-ripple {
+    position: absolute;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    margin-left: -10px;
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.2);
+    -webkit-transition: all 0.7s ease-out;
+    -moz-transition: all 0.7s ease-out;
+    -o-transition: all 0.7s ease-out;
+    -ms-transition: all 0.7s ease-out;
+    transition: all 0.7s ease-out;
+    -webkit-transition-property: -webkit-transform, opacity;
+    -moz-transition-property: -moz-transform, opacity;
+    -o-transition-property: -o-transform, opacity;
+    transition-property: transform, opacity;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+    pointer-events: none;
+}
+
+.waves-effect.waves-light .waves-ripple {
+    background-color: rgba(255, 255, 255, 0.45);
+}
+
+/*button switch*/
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 52px;
+    height: 26px;
+}
+
+.switch input {
+    display:none;
+}
+
+.switch-btn {
+    display: inline-block;
+    margin-left: 66px;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.extra-btn-label {
+    display: inline-block;
+    min-width: 230px;
+    font-size: 16px;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px 	#00CC00;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/*Style for toolbars*/
+.toolbars-content h3 {
+    text-transform: uppercase;
+}
+.toolbars-content .toolbar-blocks {
+    min-height: 40px;
+}
+.toolbars-content .toolbars-holder {
+    background: #ffffff;
+    height: 35px;
+    margin: 5px;
+    border: 1px solid #2196f3;
+}
+/*Style for each toolbars*/
+.toolbars-content .toolbar-rows {
+    margin: 5px;
+    padding: 3px 22px 3px 3px;
+    background: #f1f1f1;
+    min-height: 40px;
+}
+#unused-toolbars .toolbar-rows {
+    background: #dcdcdc;
+}
+
+/*Style for buttons*/
+.toolbars-content .toolbar-rows > div {
+    display: inline-block;
+    border: 1px solid #fafafa;
+    line-height: 20px;
+    padding: 3px 3px;
+    margin: 3px;
+    vertical-align: top;
+    box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+}
+.toolbars-content .toolbar-rows > div:hover {
+    background: #ffffff;
+    border: 1px solid #2196F3;
+    cursor: move;
+}
+
+.toolbars-content .toolbar-rows .btns-holder {
+    background: #ffffff;
+    border: 1px solid #2196f3;
+    height: 20px;
+    width: 20px;
+}
+
+.toolbars-content .toolbar-rows:after {
+    font-family: dashicons;
+    content: "\f211";
+    float: right;
+    font-size: 20px;
+    line-height: 34px;
+    margin-right: -20px;
+    color: #999;
+}
+
+/*Style for Extra buttons*/
+.extra-btns-block {
+    margin: 40px 5px;
+}
+.extra-btns-list > li {
+    margin: 10px 0px;
+}
+
+/*Style for User Access tab*/
+#wpse-users-list thead tr th{
+    font-weight: bold;
+}
+#wpse-users-select-box {
+    width: 5%;
+}
+#wpse-users-select-box > input {
+    margin: 0;
+}
+#user-search-input {
+    width: 250px;
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid #ddd !important;
+    padding: 0 5px;
+}
+#user-search-input:focus {
+    border-color: #5b9dd9 !important;
+    box-shadow: 0 0 2px rgba(30,140,190,.8) !important;
+    -moz-box-shadow: 0 0 2px rgba(30,140,190,.8) !important;
+    -webkit-box-shadow: 0 0 2px rgba(30,140,190,.8) !important;
+}
+#wpse-roles-filter {
+    vertical-align: top;
+    margin: auto 10px;
+    border: 1px solid #ddd;
+}
+.wpse-users-search-box {
+    height: 30px;
+    margin-bottom: 20px;
+}
+.wpse-groups-list {
+    margin-left: 15px;
+}
+.wpse-groups-list > li > label {
+    width: 100px;
+}
+#pagination {
+    text-align: right;
+    margin: 10px;
+    font-size: 16px;
+}
+#pagination strong, #pagination .switch-page, #pagination span {
+    padding: 4px 8px;
+}
+#pagination a {
+    cursor: pointer;
+}
+#pagination strong {
+    background: #2196F3;
+    color: #ffffff;
+}
+#pagination #first-page, #pagination #last-page {
+    line-height: 1.5rem;
+    margin: 0 5px;
+}
+#pagination i#first-page, #pagination i#last-page {
+    color: #999;
+}
+.save-profiles {
+    margin-top: 20px;
+}
+
+/*Style for Post types and Devices tab*/
+#posttypes-tab ul {
+    margin: 20px;
+}
+
+#posttypes-tab .real-label {
+    min-width: 150px;
+    font-size: 16px;
+}
+
+/*Style for CustomStyle tab*/
+span.editable {
+    background: #FFF;
+    border: 1px solid #AAA;
+    color: #000;
+    padding: 1px 3px;
+    cursor: text;
+    display: inline-block;
+}
+#wpse-customstyles-list {
+    padding: 0;
+}
+#wpse-customstyles-list a {
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+.wpse-customstyles-list {
+    margin-bottom: 20px;
+}
+.wpse-customstyles-items-class {
+    cursor: pointer;
+    margin: 0;
+}
+#wpse-customstyles-list li:hover a, #wpse-customstyles-list li:hover ul {
+    color: #08C;
+}
+#wpse-customstyles-list i {
+    font-size: 13px;
+}
+#wpse-customstyles-list .active a, #wpse-customstyles-list .active ul {
+    color: #08C;
+}
+.wpse-customstyles-items {
+    margin-bottom: 3px;
+}
+.wpse-customstyles-items a.copy,
+.wpse-customstyles-items a.trash {
+    display: none;
+    float: right;
+}
+.wpse-customstyles-items a.copy:hover,
+.wpse-customstyles-items a.trash:hover {
+    color: red !important;
+}
+.wpse-customstyles-items:hover a.trash,
+.wpse-customstyles-items:hover a.copy {
+    display: inline;
+}
+#savedInfo {
+    color: blue;
+}
+#wpse-customstyles-info label {
+    display: block;
+    font-size: 16px;
+}
+#wpse-customstyles-info input {
+    border: 1px solid #ddd !important;
+    padding: 5px;
+    background: #fff !important;
+}
+#wpse-customstyles-info input:focus {
+    border: 1px solid #5b9dd9 !important;
+    box-shadow: 0 0 2px rgba(30,140,190,.8) !important;
+    -moz-box-shadow: 0 0 2px rgba(30,140,190,.8) !important;
+    -webkit-box-shadow: 0 0 2px rgba(30,140,190,.8) !important;
+}
+#wpse-customstyles-info input,
+#wpse-customstyles-info textarea {
+    width: 100%;
+}
+#wpse-customstyles-title {
+    border: 1px solid black;
+}
+#wpse-customstyles-css {
+    resize: none;
+}
+.wpse-customstyles-css .CodeMirror {
+    height: 200px;
+    border: 1px solid #ccc;
+}
+
+/*Style for Configuration page*/
+.tabs-content {
+    background: #fff;
+}
+#wpse-config-success {
+    padding: 10px;
+    margin: 20px 20px 20px 0;
+    background-color: #ffffff;
+    border-left: 5px solid #46b450;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.3);
+    -moz-box-shadow: 0 1px 1px 0 rgba(0,0,0,.3);
+    -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.3);
+}
+#wpse-config-close {
+    float: right;
+    color: #aaaaaa;
+}
+#wpse-config-close:hover {
+    color: #c00;
+    cursor: pointer;
+}
+.config-container .tabs-content {
+    padding: 10px;
+}
+.config-container .config-list li {
+    margin-bottom: 15px;
+}
+.config-container .config-label {
+    display: inline-block;
+    min-width: 200px;
+    font-size: 16px;
+}
+.config-container .save-config {
+    margin: 20px 0;
+}
+.save-btns input {
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+#wpse-customstyles-info #save_custom_styles {
+    padding: 10px 20px;
+    background: #2196F3 !important;
+}
+.wpsetips_qtip {
+    background: #000000 !important;
+    color: #ffffff !important;
+    border: 1px solid #000000 !important;
+}
+
+.im_ex_wpse_settings {
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    margin: 1px;
+    font-size: 14px;
+    margin-left: 10px;
+    background: #f7f7f7;
+    cursor: pointer;
+}
+
+.im_ex_wpse_settings:hover {
+    background: #2196F3;
+    color: #fff
+}
+
+.tabs-content h3 {
+    margin: 20px 0;
+}

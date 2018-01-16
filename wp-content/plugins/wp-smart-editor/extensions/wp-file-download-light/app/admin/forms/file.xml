@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form class="wpfdparams">
+    <input
+            name="state"
+            type="select"
+            label="Published"
+            value="1"
+            class="inputbox input-block-level"
+            >
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+    </input>
+
+    <input 
+        name="title"
+        type="text"
+        label="Title"
+        value=""
+        class="inputbox input-block-level"
+        required="true"
+    />
+    <input 
+        name="description"
+        type="desc"
+        label="Description"
+        value=""
+        cols="50"
+        rows="5"
+        class="inputbox input-block-level"
+        required="false"
+        namespace="Joomunited\WP_File_Download\Admin\Fields\"
+    />
+    <input
+            name="publish"
+            type="date"
+            label="Published on"
+            value="0000-00-00 00:00:00"
+            class="inputbox input-block-level publish_up"
+            namespace="Joomunited\WP_File_Download\Admin\Fields\"
+            />
+    <input 
+        name="version"
+        type="text"
+        label="Version"
+        value=""
+        class="inputbox input-block-level"
+        required="false"
+    />
+
+    <input
+        name="social"
+        id="social"
+        type="social"
+        label="Lock content by social"
+        value="0"
+        class="inputbox input-block-level"
+        namespace="Joomunited\WP_File_Download\Admin\Fields\">
+        <option value="0">No</option>
+        <option value="1">Yes</option>
+    </input>
+
+    <input 
+        name="hits"
+        type="hits"
+        label="Hits"
+        value=""
+        class="inputbox input-small input-block-level wpfdinput"
+        size="6"
+        id="hits"
+        namespace="Joomunited\WP_File_Download\Admin\Fields\"
+    />
+
+    <button
+        type="submit"
+        value="Save"
+        class="button button-primary"
+    />
+
+</form>
